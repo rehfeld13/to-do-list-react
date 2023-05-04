@@ -1,7 +1,8 @@
 import { Header } from './components/Header'
-import { PlusCircle } from 'phosphor-react'
-import './global.css'
+import { ToDoList } from './components/ToDoList'
+
 import './App.css'
+import './global.css'
 
 export function App() {
   return(
@@ -9,20 +10,7 @@ export function App() {
       <Header />
 
       <div className='wrapper'>
-
-        <div className='input'>
-          <form>
-            <input type="text" placeholder='Adicione uma nova tarefa' />
-            <button type='submit'>
-              Criar
-              <PlusCircle />
-            </button>
-          </form>
-        </div>
-
-        <main>
-
-        </main>
+        <ToDoList />
       </div>
 
 

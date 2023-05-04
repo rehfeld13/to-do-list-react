@@ -1,0 +1,56 @@
+article .tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article .tasks .header-task{
+  display: flex;
+  align-items: center;
+}
+
+article .tasks .header-task .task-create{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+article .tasks .header-task .task-create h2{
+  font-size:0.850rem;
+  font-weight: bold;
+  color: var(--blue-300);
+}
+
+article .tasks .header-task .task-create span{
+  font-size: 0.8rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 0.1rem 0.3rem;
+  border-radius: 100%;
+}
+
+article .tasks .header-task .task-completed{
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+article .tasks .header-task .task-completed h2{
+  font-size:0.850rem;
+  font-weight: bold;
+  color: var(--purple-300);
+}
+
+article .tasks .header-task .task-completed span{
+  font-size: 0.8rem;
+  color: var(--gray-200);
+  background-color: var(--gray-400);
+  padding: 0.1rem 0.3rem;
+  border-radius: 100%;
+}
+
+article .taskList{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

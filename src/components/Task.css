@@ -1,0 +1,63 @@
+.task{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: var(--gray-500);
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.task .content{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task .content .noCheck{
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid var(--blue-300);
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 0.6rem;
+}
+
+.task .content .check::after{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: '✓';
+  color: white;
+  font-size: 0.5rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1px solid var(--blue-300);
+  background-color: var(--purple-500);
+  border-radius: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.task .content p{
+  hyphens: auto;
+  color: var(--gray-100);
+  line-height: 1.25;
+}
+
+.task button{
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.task button svg{
+  color: var(--gray-100);
+}
+
+.task button svg:hover{
+  cursor: pointer;
+  color: var(--red-500);
+}
